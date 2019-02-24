@@ -16,7 +16,7 @@ aws s3 mb s3://BUCKET_NAME
 (anytime dependencies or code or template changes)
 By default, this command writes built artifacts to `.aws-sam/build` folder.
 ```
-pip freeze >> hello_world/requirements.txt
+pip freeze > hello_world/requirements.txt
 sam build
 
 # (if native modules) sam build --use-container
